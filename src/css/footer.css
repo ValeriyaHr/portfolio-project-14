@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 32px 24px 32px;
+  width: 1280px;
+  height: 160px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  width: 412px;
+  height: 24px;
+  justify-content: space-between;
+}
+
+.copyright {
+  text-align: right;
+}
