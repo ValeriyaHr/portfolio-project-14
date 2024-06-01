@@ -1,5 +1,7 @@
+@import url("./src/public/fonts_impact/style.css");
+
 body {
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Impact Regular', 'Montserrat', sans-serif;
     color: #000000;
     background-color: #ffffff;
   }
