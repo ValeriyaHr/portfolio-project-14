@@ -34,6 +34,10 @@ body {
     width: 100%;
     padding: 28px 24px;
     border-bottom: 1px solid rgba(204, 204, 204, 1);
+    background-color: transparent;
+
+    transition: background-color 500ms ease-in-out;
+
 }
 
 .ac.is-active {
@@ -41,6 +45,7 @@ body {
     padding: 28px 24px;
     border-radius: 16px;
     border: none;
+
 }
 
 .ac-header {
@@ -73,14 +78,23 @@ body {
     letter-spacing: 0.5px;
 
     margin-top: 24px;
+
+    transform: scaleY(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.ac.is-active .ac-text{
+    transform: scaleY(1);
 }
 
 .ac-panel {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 500ms ease-in-out;
 }
 
 .ac.is-active>.ac-panel {
-    display: block;
+    max-height: 1000px;
 }
 
 .svg-wrapper {
@@ -93,15 +107,15 @@ body {
 }
 
 .ac .faq-svg {
-    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
 
-    transition: transform 300ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 }
 
 .ac.is-active .faq-svg {
-    transform: rotateX(360deg);
+    transform: rotateZ(360deg);
 
-    transition: transform 300ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 }
 
 @media screen and (min-width:768px) {
@@ -129,9 +143,6 @@ body {
 @media screen and (min-width:1280px) {
     .container {
         max-width: 1216px;
-        background: url(../img/decor\ bg\ 4.png);
-        background-position: bottom left;
-        background-repeat: no-repeat;
     }
 
     .faq {
