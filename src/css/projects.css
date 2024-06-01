@@ -48,6 +48,7 @@
     letter-spacing: 0.5px;
     line-height: 40px;
     margin-bottom: 16px;
+    font-weight: 500px;
 }
 
 .projects-btn {
@@ -63,11 +64,13 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 24px;
+    font-weight: 500px;
     color: #292929;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+
 }
 .projects-icon{
     color: #00B068;
