@@ -164,5 +164,10 @@
             line-height: 1.5em;
             letter-spacing: 0.5px;
     }
+
+    .form-btn {
+        padding: 12px 24px;
+        width: 173px;
+    }
     
 }
