@@ -1,54 +1,86 @@
 <section class="work_togather" id="contacts">
-    <div class="container work-container">
-<h3 class="work-sub-tittle">Contact me to transform your ideas into exceptional solutions.</h3>
-<ul class="work-list">
+  <div class="container work-container">
+    <h2 class="work-title">
+      <span class="work-title-span">let's</span> work<br />
+      together
+    </h2>
+    <div class="work-laptop-position">
+      <div>
+        <h3 class="work-sub-tittle">
+          Contact me to transform your ideas into exceptional solutions.
+        </h3>
+        <ul class="work-list">
+          <li class="work-list-item">
+            <a class="work-list-link" href="tel:+380904567890">
+              <svg width="24" height="24" class="work-icon">
+                <use href="../img/icons.svg#icon-telephone"></use>
+              </svg>
+              <span>+38 090 456 78 90</span>
+            </a>
+          </li>
 
-<li class="work-list-item">
-    <a href="/">
-    <svg width="48" height="48" class="work-icon">
-        <use href="/"></use>
-    </svg>
-    +38 090 456 78 90
-    </a>
-</li>
+          <li class="work-list-item">
+            <a class="work-list-link" href="mailto:lloydjefferson@gmail.com">
+              <svg width="24" height="24" class="work-icon">
+                <use href="../img/icons.svg#icon-email"></use>
+              </svg>
+              <span>lloydjefferson@gmail.com</span>
+            </a>
+          </li>
 
-<li class="work-list-item">
-    <a href="/">
-    <svg width="48" height="48" class="work-icon">
-        <use href="/"></use>
-    </svg>
-    lloydjefferson@gmail.com
-    </a>
-</li>
+          <li class="work-list-item item-location">
+            <svg width="24" height="24" class="work-icon">
+              <use href="../img/icons.svg#icon-location"></use>
+            </svg>
+            <span>USA, New York</span>
+          </li>
+        </ul>
+      </div>
+      <!--form-->
+      <form class="form" action="#">
+        <div class="form-block">
+          <label class="form-label" for="user-email">Email</label>
+          <input
+            class="form-input-name"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+        </div>
 
-<li class="work-list-item">
-    <a href="/">
-    <svg width="48" height="48" class="work-icon">
-        <use href="/"></use>
-    </svg>
-    USA, New York    
-</a>
-</li>
+        <div class="form-label-textarea">
+          <label class="form-label" for="user-comment">Comment</label>
+          <textarea
+            class="input-textarea"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Message"
+          ></textarea>
+        </div>
 
-</ul>
-
-<!--form-->
-<form class="form" action="#"> 
- <div class="form-block">
-    <label class="form-label" for="user-email">Email</label>
-       <input class="form-input-name" type="email" id="user-email" name="user-email" >
+        <button class="form-btn" type="submit">SEND MESSAGE</button>
+      </form>
     </div>
- 
-    <div class="form-label-textarea">
-       <label class="form-label" for="user-comment">Comment
-       <textarea class="input-textarea" id="user-comment" name="user-comment" 
-       placeholder="Text input"></textarea>
- </label>
+  </div>
+  <!--modal-->
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-icon-close" width="24" height="24">
+          <use href="../img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-box-text">
+        <h3 class="modal-text-green">
+          Thank you for your interest in cooperation!
+        </h3>
+        <p class="modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
     </div>
- 
-     <button class="form-btn" type="submit">Send</button>
- </form>
-    </div>
-<!--modal-->
-
+  </div>
 </section>
