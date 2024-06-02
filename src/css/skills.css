@@ -1,0 +1,144 @@
+.skills {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    width: 100%;
+  }
+
+  .visually-hidden {
+    visibility: hidden;
+  }
+  
+  .ticker-above {
+    overflow: hidden;
+    padding: 32px 0px;
+    font-weight: 500;
+    font-size: 34px;
+    text-transform: uppercase;
+    background-color: #BCDFD1;
+  }
+
+  .ticker-bottom {
+    overflow: hidden;
+    padding: 32px 0px;
+    font-weight: 500;
+    font-size: 34px;
+    text-transform: uppercase;
+    background-color: #E4E5E6;
+    transform: rotate(-2deg);
+  }
+
+  .skills-list {
+    display: flex;
+    gap: 16px;
+    min-width: 100%;
+    animation-name: skillsItem;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;  
+}
+
+
+  .skills-item {
+    position: relative;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 16px;
+    white-space: nowrap;
+    margin-right: 2px;
+}
+
+@keyframes skillsItem {
+    from {
+      transform: translateX(0);
+    }
+    
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .skills-item-green {
+    position: relative;
+    color: #00B068;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 16px;
+    white-space: nowrap;
+    margin-right: 2px;
+  }
+
+  @keyframes skillsItemGreen {
+    from {
+      transform: translateX(0);
+    }
+    
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .skills-item::before {
+    content: ''; 
+    position: absolute; 
+    left: -16px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(-180deg); 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 2px; 
+    background-color: #00b068; 
+  }
+
+  .skills-item-green::before {
+    content: ''; 
+    position: absolute; 
+    left: -16px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(-180deg); 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 2px; 
+    background-color: #000000; 
+  }
+
+
+
+  
+  @media screen and (min-width: 768px) {
+    .skills {
+        margin-top: 62px;
+        margin-bottom: 62px;
+    }
+
+    .skills-item {
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: 0.01em;
+  }
+
+  .skills-item-green {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+}
+}
+  
+  @media screen and (min-width: 1280px) {
+    .skills {
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
+  }

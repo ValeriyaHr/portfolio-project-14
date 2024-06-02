@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Impact';
+    src: local('Impact Regular'), local('Impact-Regular'),
+        url('ImpactLTStd.woff2') format('woff2'),
+        url('ImpactLTStd.woff') format('woff'),
+        url('ImpactLTStd.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
