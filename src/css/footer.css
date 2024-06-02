@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -7,10 +9,20 @@
   height: 160px;
 }
 
+.footer-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
 .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-list {
@@ -23,4 +35,17 @@
 
 .copyright {
   text-align: right;
+}
+
+.footer-logo-link {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-logo-span {
+  color: #00b068;
 }
