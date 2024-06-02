@@ -18,6 +18,8 @@
     font-size: 34px;
     text-transform: uppercase;
     background-color: #BCDFD1;
+    z-index: 999;
+    position: relative;
   }
 
   .ticker-bottom {
@@ -27,7 +29,8 @@
     font-size: 34px;
     text-transform: uppercase;
     background-color: #E4E5E6;
-    transform: rotate(-2deg);
+    transform: rotate(2deg);
+    z-index: 99;
   }
 
   .skills-list {
@@ -116,6 +119,7 @@
 
 
 
+
   
   @media screen and (min-width: 768px) {
     .skills {
@@ -141,4 +145,5 @@
         margin-top: 82px;
         margin-bottom: 82px;
     }
+    
   }
