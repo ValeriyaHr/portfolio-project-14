@@ -88,7 +88,23 @@
     stroke: black;
     fill: transparent;
 }
+.not-found-item {
+    margin: 0 auto;
+    width: 343px;
+    height: 300px;
+    border-radius: 16px;
+    background: var(--Light-grey, #E4E5E6);
+    padding: 32px;
+}
 
+.not-found-text {
+    text-align: center;
+    color: var(--Black, #292929);
+    font-family: Poppins;
+    ont-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
 @media screen and (min-width: 768px) {
     .reviews-container {
         max-width: 768px;
