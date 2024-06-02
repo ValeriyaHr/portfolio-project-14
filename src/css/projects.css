@@ -1,0 +1,173 @@
+.projects {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.projects-tittle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Impact; 
+    font-size: 52px;
+    letter-spacing: 1.8px;
+    line-height: 64px;
+}
+
+.projects-tittle span {
+    color: #00B068;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projects-item-img {
+    width: 320px;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 16px;
+}
+
+.tech-stack {
+    font-size: 16px;
+    color: #292929;
+    font-family: Poppins;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.projects-item-title {
+    color: #292929;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    margin-bottom: 16px;
+    font-weight: 500px;
+}
+
+.projects-btn {
+    width: 125px;
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    background-color: #E4E5E6;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 40px;
+    margin-left: auto;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-weight: 500px;
+    color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.projects-icon{
+    stroke: #00B068;
+}
+.projects-btn:hover{
+    background-color: #BBBBBB;
+}
+
+.load-more-button {
+    /* width: 154px; */
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-family: Poppins;
+    background-color: transparent;
+    color: #292929;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.load-more-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #00B068;
+    left: 0;
+
+}
+
+.load-more-button:hover {
+    color: #00B068;
+
+} 
+@media screen and (min-width: 768px) {
+.projects {
+        margin-top: 62px;
+        margin-bottom: 62px;
+}
+.projects-tittle {
+    margin-bottom: 80px;
+    font-size: 108px;
+    letter-spacing: 1.8px;
+    line-height: 124px;
+
+}
+.projects-item-img {
+    width: 704px;
+    margin-bottom: 16px;
+}
+.tech-stack {
+    margin-bottom: 20px;
+}
+
+.projects-item-title {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+    margin-bottom: 0px;
+}
+
+.projects-btn {
+    margin-bottom: 0px;
+}
+.projects-item-conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.load-more-button {
+    font-size: 20px;
+    line-height: 32px;
+}
+.load-more-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #00B068;
+    left: 0;
+
+}
+}
+@media screen and (min-width: 1280px) {
+.projects {
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+.projects-item-img {
+    width: 1008px;
+}
+.projects-item-conteiner {
+    margin-bottom: 80px;
+}
+}
