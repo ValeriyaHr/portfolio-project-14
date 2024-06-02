@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-width: 280px;
+    max-width: 320px;
+}
+
+.faq {
+    max-width: 360px;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.faq__title {
+    font-family: Impact, sans-serif;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #292929;
+}
+
+.title__accent {
+    color: #00B068;
+}
+
+.ac {
+    width: 100%;
+    padding: 28px 24px;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    background-color: transparent;
+
+    transition: background-color 500ms ease-in-out;
+
+}
+
+.ac.is-active {
+    background-color: rgba(0, 176, 104, 0.2);
+    padding: 28px 24px;
+    border-radius: 16px;
+    border: none;
+
+}
+
+.ac-header {
+    background-color: transparent;
+    display: flex;
+
+}
+
+.ac-trigger {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.ac-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+
+    margin-top: 24px;
+
+    transform: scaleY(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.ac.is-active .ac-text{
+    transform: scaleY(1);
+}
+
+.ac-panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 500ms ease-in-out;
+}
+
+.ac.is-active>.ac-panel {
+    max-height: 1000px;
+}
+
+.svg-wrapper {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ac .faq-svg {
+    transform: rotateZ(180deg);
+
+    transition: transform 500ms ease-in-out;
+}
+
+.ac.is-active .faq-svg {
+    transform: rotateZ(360deg);
+
+    transition: transform 500ms ease-in-out;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 704px;
+    }
+
+    .faq {
+        max-width: 768px;
+        padding: 64px 32px;
+    }
+
+    .faq__title {
+        font-size: 108px;
+        line-height: 1.15;
+        margin-bottom: 60px;
+    }
+
+    .ac-trigger {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        max-width: 1216px;
+    }
+
+    .faq {
+        max-width: 1280px;
+        padding: 82px 32px;
+    }
+
+    .faq__title {
+        max-width: 520px;
+        margin-bottom: 0;
+    }
+
+    .accordion-container {
+        max-width: 592px;
+        margin-left: auto;
+        margin-top: -96px;
+    }
+}
