@@ -121,8 +121,18 @@ body.dark-mode .work-list-item {
   color: rgba(240, 240, 240, 1);
 }
 body.dark-mode .work-icon {
-   stroke: rgba(0, 176, 104, 1);
-   fill: rgba(54, 58, 64, 1);
+  stroke: rgba(0, 176, 104, 1);
+  fill: rgba(54, 58, 64, 1);
+ }
+ body.dark-mode .work-list-item:hover,
+ body.dark-mode .work-list-item:focus {
+   color: rgba(0, 176, 104, 1);
+ }
+ body.dark-mode .form-btn {
+ background: rgba(20, 197, 124, 1);
+ }
+ body.dark-mode .form-btn:hover {
+   background: rgba(0, 145, 86, 1);
  }
 body.light-mode {
   background-color: #F0F0F0;
