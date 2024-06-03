@@ -1,0 +1,185 @@
+.herotitle {
+    font-family: Impact;
+    font-size: 124px;
+    font-weight: 400;
+    line-height: 148px;
+    letter-spacing: 1.7px;
+    text-align: left;
+    color: #00B068;
+    width: 552px;
+    height: 444px;
+}
+
+.iamspan {
+    color: black;
+}
+
+.hero-text {
+    height: 96px;
+    width: 592px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.hero-list-link {
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.socia-media-container {
+    background-color: #E4E5E6;
+    height: 104px;
+    padding: 40px;
+}
+
+.hero {
+    padding-top: 88px;
+    background-color: #F0F0F0;
+    ;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button-left-fn {
+    text-wrap: nowrap;
+
+    margin-right: 100px;
+
+}
+
+.hero-btn {
+
+    height: 96px;
+    width: 261px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: black;
+    background-color: #00B06833;
+    ;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+}
+
+.hero-btn:hover {
+    background-color: #00B06899;
+    ;
+}
+
+.title-image-container {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.button-text-container {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-left: 100px;
+
+}
+
+.iamspantwo {
+    color: #00B068;
+}
+
+.hero {
+    background-image: url('../img/hero/background.png');
+}
+
+.image {
+    border-radius: 32px;
+}
+
+.icon {
+    margin-right: 20px;
+    fill: #00B068;
+}
+
+@media screen and (min-width: 768px) and (max-width:1280px) {
+    .image {
+        display: none;
+    }
+
+    .herotitle {
+        font-size: 124px;
+
+    }
+
+    .hero-text {
+        width: 650px;
+    }
+
+    .button-text-container {
+        display: block;
+        margin-left: auto;
+        margin-top: 80px;
+    }
+
+    .hero-btn {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .image {
+        display: none;
+
+    }
+
+    .herotitle {
+        font-size: 64px;
+        line-height: 80px;
+        height: 240px;
+        width: auto;
+
+    }
+
+    .hero-text {
+
+        line-height: 28px;
+        width: 320px;
+        height: 140px;
+    }
+
+    .hero-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .socia-media-container {
+        height: 232px;
+    }
+
+    .button-text-container {
+        display: block;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+
+    .hero-btn {
+        margin-bottom: 50px;
+    }
+}
