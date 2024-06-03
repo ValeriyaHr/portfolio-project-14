@@ -5,7 +5,8 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --color-bg: rgba(255, 255, 255, 0.87);
+  --color-fg: #1E2023
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,4 +49,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media (prefers-dark-scheme: light) {
+  :root {
+    --color-bg: #1E2023;
+    --color-fg: rgba(255, 255, 255, 0.87);
+  }
 }

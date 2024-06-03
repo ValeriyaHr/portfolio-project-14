@@ -3,7 +3,8 @@
 body {
     font-family: 'Poppins', 'Impact Regular', 'Montserrat', sans-serif;
     color: #000000;
-    background-color: #F0F0F0;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
   }
   
   .container {
@@ -33,3 +34,12 @@ body {
     }
   }
   
+body.dark-mode {
+background-color:rgba(54, 58, 64, 1);
+color: rgba(240, 240, 240, 1);
+}
+
+body.light-mode {
+  background-color: #F0F0F0;
+  color:rgba(41, 41, 41, 1);
+}
