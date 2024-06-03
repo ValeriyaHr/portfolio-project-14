@@ -34,7 +34,6 @@
     height: 190px;
     overflow-x: hidden;
     overflow-y: auto;
-    color: var(--Black, #292929);
     font-family: Poppins;
     font-weight: 300;
     line-height: 1.5;
@@ -50,7 +49,7 @@
     border-radius: 24px;
 }
 .name-text {
-    color: var(--Black, #292929);
+    
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
@@ -129,52 +128,4 @@
         max-width: 530px;
         height: 100px;
     }
-}
-.check-input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.check-text {
-    color: rgba(64, 64, 64, 0.6);
-    width: 57px;
-    display: flex;
-    position: relative;
-}
-
-
-
-.check-text::before {
-    content: '';
-    width: 48px;
-    height: 24px;
-    background-color: rgba(228, 229, 230, 1);
-    border-radius: 50px;
-    border: 1px solid transparent;
-    margin-right: 10px;
-    transition-duration: 300ms;
-
-}
-
-.check-text::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: rgba(0, 176, 104, 1);
-    transition-duration: 300ms;
-}
-
-.check-input:checked+.check-text::after {
-    transform: translate(25px);
-    background-color: rgba(42, 45, 50, 1);
-    box-shadow: inset 0px 0px 0px -2px rgba(20, 197, 124, 1), inset -7px 0 0 0 rgba(20, 197, 124, 1)
-}
-
-.check-input:checked+.check-text::before {
-    background-color: rgba(42, 45, 50, 1);
 }
