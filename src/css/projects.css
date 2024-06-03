@@ -33,7 +33,6 @@
 
 .tech-stack {
     font-size: 16px;
-    color: #292929;
     font-family: Poppins;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -41,7 +40,7 @@
 }
 
 .projects-item-title {
-    color: #292929;
+    
     text-align: left;
     font-family: Poppins;
     font-size: 32px;
