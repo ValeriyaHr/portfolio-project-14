@@ -135,7 +135,7 @@
     height: 680px;
   }
 
-  .skills-container {
+  .about-skills-container {
     display: flex;
     gap: 32px;
   }
@@ -189,7 +189,7 @@
     height: 488px;
   }
 
-  .skills-container {
+  .about-skills-container {
     display: flex;
     gap: 136px;
     margin-left: 208px;

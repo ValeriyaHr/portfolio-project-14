@@ -1,14 +1,12 @@
 .footer-font {
-  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
-  color: black;
 }
 
 .footer-logo-link {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Impact';
   font-weight: 400;
   font-size: 32px;
   line-height: 100%;
@@ -22,13 +20,12 @@
 
 /**-------------------360--------------------*/
 
-@media screen and (max-width: 360px) {
   .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 40px 20px 24px 20px;
+    padding: 40px 20px 40px 20px;
     width: 360px;
     height: 384px;
   }
@@ -48,37 +45,41 @@
     margin-top: 32px;
     margin-bottom: 40px;
   }
-
+  .footer-list-item:hover, .footer-list-item:focus {
+    color: rgba(0, 176, 104, 1);
+}
   .copyright {
     text-align: center;
   }
-}
+
 
 /**-------------------768--------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   .footer-container {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     justify-content: space-between;
+     padding: 40px 32px 24px 32px;
+    */
     margin-top: 62px;
-    padding: 40px 32px 24px 32px;
     width: 768px;
     height: 216px;
   }
 
   .footer-content {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
     height: 50%;
   }
 
   .footer-list {
-    display: flex;
+    /*display: flex;
+    justify-content: space-between;*/
     flex-direction: row;
     width: 412px;
-    justify-content: space-between;
+    
   }
 
   .copyright {
@@ -90,28 +91,29 @@
 
 @media screen and (min-width: 1280px) {
   .footer-container {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
     margin-top: 82px;
-    padding: 40px 32px 24px 32px;
+    /*padding: 40px 32px 24px 32px;*/
     width: 1280px;
     height: 160px;
   }
 
   .footer-content {
-    display: flex;
+    /*display: flex;
+    justify-content: space-between;*/
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
 
   .footer-list {
-    display: flex;
+   /* display: flex;
     flex-direction: row;
+    justify-content: space-between;*/
     width: 412px;
     height: 24px;
-    justify-content: space-between;
+    
   }
 
   .copyright {
