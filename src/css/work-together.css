@@ -62,7 +62,7 @@
 
 .work-icon {
     stroke: rgba(0, 176, 104, 1);
-    fill: #fff;
+    fill: #ffffff00;
 }
 
 
@@ -135,6 +135,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 999;
 }
 
 .is-open {
@@ -163,6 +164,7 @@
     width: 24px;
     height: 24px;
     border: none;
+    background-color: transparent;
 }
 
 .modal-icon-close {
