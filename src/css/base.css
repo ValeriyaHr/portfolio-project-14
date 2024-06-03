@@ -134,6 +134,16 @@ body.dark-mode .work-icon {
  body.dark-mode .form-btn:hover {
    background: rgba(0, 145, 86, 1);
  }
+ body.dark-mode .form-input-name {
+  background: #2A2D32;
+ }
+ body.dark-mode .form-input-name {
+   background: #2A2D32;
+ }
+ body.dark-mode .input-textarea {
+   background: #2A2D32;
+ }
+
 body.light-mode {
   background-color: #F0F0F0;
   color:rgba(41, 41, 41, 1);
