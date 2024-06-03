@@ -38,6 +38,9 @@ body.dark-mode {
 background-color:#1E2023;
 color: rgba(240, 240, 240, 1);
 }
+body.dark-mode .menu-open-icon {
+  fill: rgba(240, 240, 240, 1);
+}
 body.dark-mode .iamspan {
   color: rgba(240, 240, 240, 1);
 }
@@ -56,6 +59,10 @@ body.dark-mode .ticker-above{
 body.dark-mode .ticker-bottom {
   background-color: rgba(42, 45, 50, 1);
   color: rgba(20, 197, 124, 1);
+}
+body.dark-mode .projects-btn {
+  background-color: rgba(42, 45, 50, 1);
+  color: rgba(240, 240, 240, 1);
 }
 body.dark-mode .load-more-button{
   color: rgba(240, 240, 240, 1);
@@ -106,7 +113,10 @@ body.dark-mode .work-sub-tittle {
 body.dark-mode .work-list-item {
   color: rgba(240, 240, 240, 1);
 }
-  /* Desktop-Tablet/body 1 */
+body.dark-mode .work-icon {
+   stroke: rgba(0, 176, 104, 1);
+   fill: rgba(54, 58, 64, 1);
+ }
 body.light-mode {
   background-color: #F0F0F0;
   color:rgba(41, 41, 41, 1);
