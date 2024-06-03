@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 const checkbox = document.querySelector('.check-input');
 const body = document.body;
-
+body.classList.add('light-mode');
+checkbox.checked = false;
+localStorage.removeItem('theme');
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     body.classList.add(savedTheme);
