@@ -52,7 +52,9 @@
     justify-content: center;
     gap: 50px;
 }
-
+.hero-list-item:hover, .hero-list-item:focus {
+    color: rgba(0, 176, 104, 1);
+  }
 .button-left-fn {
     text-wrap: nowrap;
 
