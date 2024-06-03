@@ -48,7 +48,7 @@
     letter-spacing: 0.5px;
     line-height: 40px;
     margin-bottom: 16px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .projects-btn {
@@ -64,7 +64,7 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #292929;
     display: flex;
     align-items: center;
