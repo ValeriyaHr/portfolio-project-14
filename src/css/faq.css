@@ -5,17 +5,13 @@ body {
     margin: 0;
 }
 
-.container {
-    min-width: 280px;
-    max-width: 320px;
-}
-
 .faq {
-    max-width: 360px;
-    padding: 40px 20px;
-    margin: 0 auto;
+    margin: 40px 0;
 }
 
+.faq .container {
+    background: none;
+}
 .faq__title {
     font-family: Impact, sans-serif;
     font-size: 52px;
@@ -31,13 +27,14 @@ body {
 }
 
 .ac {
+    position: relative;
+
     width: 100%;
     padding: 28px 24px;
     border-bottom: 1px solid rgba(204, 204, 204, 1);
     background-color: transparent;
 
     transition: background-color 500ms ease-in-out;
-
 }
 
 .ac.is-active {
@@ -45,13 +42,12 @@ body {
     padding: 28px 24px;
     border-radius: 16px;
     border: none;
-
 }
 
 .ac-header {
     background-color: transparent;
     display: flex;
-
+    padding-right: 48px;
 }
 
 .ac-trigger {
@@ -110,6 +106,10 @@ body {
     transform: rotateZ(180deg);
 
     transition: transform 500ms ease-in-out;
+
+    position: absolute;
+    top: 32px;
+    right: 28px;
 }
 
 .ac.is-active .faq-svg {
@@ -119,13 +119,8 @@ body {
 }
 
 @media screen and (min-width:768px) {
-    .container {
-        max-width: 704px;
-    }
-
     .faq {
-        max-width: 768px;
-        padding: 64px 32px;
+        margin: 62px 0;
     }
 
     .faq__title {
@@ -138,16 +133,23 @@ body {
         font-size: 20px;
         line-height: 1.6;
     }
+
+    .ac-header {
+        padding-right: 56px;
+    }
 }
 
 @media screen and (min-width:1280px) {
-    .container {
-        max-width: 1216px;
+    .faq {
+        margin: 82px 0;
+       
     }
 
-    .faq {
-        max-width: 1280px;
-        padding: 82px 32px;
+    .faq .container {
+        background-image: url(/img/faq/background_faq_1x.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 526px 408px;
     }
 
     .faq__title {
@@ -160,4 +162,13 @@ body {
         margin-left: auto;
         margin-top: -96px;
     }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .faq .container {
+                background-image: url(/img/faq/background_faq_2x.png);
+            }
+        }
 }
+
