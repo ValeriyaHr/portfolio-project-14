@@ -43,7 +43,6 @@ if (savedTheme) {
         checkbox.checked = true;
     }
 }
-
 checkbox.addEventListener('change', () => {
     if (checkbox.checked) {
         body.classList.remove('light-mode');

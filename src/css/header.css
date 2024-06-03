@@ -161,9 +161,6 @@ margin-left: 5px;
   display: flex;
   position: relative;
 }
-
-
-
 .check-text::before {
   content: '';
   width: 48px;
