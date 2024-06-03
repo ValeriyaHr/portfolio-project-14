@@ -29,11 +29,12 @@ msgInp.addEventListener('input', userMsg);
 // Пост на сервер
 
 const sendData = async () => axios.post(BASE_URL, userData);
+
    
     
 const sendForm = async (event) => {
     event.preventDefault();
-    if (userData.comment === '' && userData.email === '') {
+    if (userData.comment === '' || userData.email === '') {
         iziToast.error({
             message: 'All fields must be completed!',
             position: 'topRight',
@@ -42,19 +43,22 @@ const sendForm = async (event) => {
         return
     }
     sendData(BASE_URL, userData)
-    .then(
+    try {
         modalEl.classList.add('is-open')
-    )
-    .catch (
+    }
+    catch (error) {
         iziToast.error({
-            message: 'Sorry, there are no images matching your search query. Please try again!',
+            message: 'Ops! Something went wrong. Please try again!',
             position: 'topRight',
             maxWidth: '300px',
         })
-    )
+    }
     event.currentTarget.reset();
+    userData.comment = '';
+    userData.email = '';
 }
 formEl.addEventListener('submit', sendForm);
+
 
 
 // Функції для закриття модалки
