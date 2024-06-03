@@ -69,13 +69,9 @@
   }
 
   .benefits-head {
-    font-family: 'Impact', sans-serif;
-    font-weight: 400;
     font-size: 108px;
     line-height: 1.14815;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
     max-width: 690px;
   }
 
@@ -94,22 +90,11 @@
   }
 
   .benefits-head-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
   }
 
   .benefits-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
   }
 }
 
@@ -128,18 +113,13 @@
   }
 
   .benefits-head {
-    font-family: 'Impact', sans-serif;
-    font-weight: 400;
     font-size: 108px;
     line-height: 1.14815;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
     margin-bottom: 0;
   }
 
   .benefits-head-green {
-    color: #00b068;
   }
 
   .benefits-menu {
@@ -157,21 +137,10 @@
   }
 
   .benefits-head-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
   }
 
   .benefits-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
   }
 }
