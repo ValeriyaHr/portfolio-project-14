@@ -55,4 +55,16 @@ checkbox.addEventListener('change', () => {
         body.classList.add('light-mode');
         localStorage.setItem('theme', 'light-mode');
     }
-});
+}
+);
+const applyThemeToMobileMenu = () => {
+    if (body.classList.contains('dark-mode')) {
+        mobileMenu.classList.add('dark-mode');
+        mobileMenu.classList.remove('light-mode');
+    } else {
+        mobileMenu.classList.add('light-mode');
+        mobileMenu.classList.remove('dark-mode');
+    }
+};
+applyThemeToMobileMenu();
+

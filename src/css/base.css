@@ -38,9 +38,16 @@ body.dark-mode {
 background-color:#1E2023;
 color: rgba(240, 240, 240, 1);
 }
+body.dark-mode .mobile-menu {
+  background: rgba(30, 32, 35, 1);
+}
+body.dark-mode .close-btn-icon {
+  stroke: rgba(240, 240, 240, 1);
+}
 body.dark-mode .menu-open-icon {
   fill: rgba(240, 240, 240, 1);
 }
+
 body.dark-mode .iamspan {
   color: rgba(240, 240, 240, 1);
 }
@@ -120,4 +127,7 @@ body.dark-mode .work-icon {
 body.light-mode {
   background-color: #F0F0F0;
   color:rgba(41, 41, 41, 1);
+}
+body.light-mode .mobile-menu {
+  background-color: #F0F0F0;
 }
