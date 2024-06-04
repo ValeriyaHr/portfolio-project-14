@@ -191,7 +191,7 @@ align-items: center;
 }
 
 .modal-text {
-    color: var(--Black, #292929);
+    /* color: var(--Black, #292929); */
         text-align: center;
         font-family: Poppins;
         font-size: 16px;
