@@ -46,6 +46,7 @@ display: flex;
     gap: 40px;
 }
 .header-nav-list-item {
+  transition: transform 250ms;
 }
 .header-nav-list-item:hover, .header-nav-list-item:focus {
   color: rgba(0, 176, 104, 1);
@@ -74,13 +75,6 @@ letter-spacing: 0.03em;
   height: 100vh;
   z-index: 10;
   background: #F0F0F0;
-  /*background-image: url(../img/header/header_bg_3.png), url(../img/header/header_bg_2.png);
-  background-position: top 27px left -12px, bottom 105.74px right 28px;
-  background-repeat: no-repeat;
-  background-size: 351.67px, 169.58px;
-  backdrop-filter: blur(0px), blur(10px);
-  -webkit-backdrop-filter: blur(0), blur(10px);
-  */
   transform: translateY(-100%);
   transition: transform 250ms;
 }
@@ -128,6 +122,9 @@ line-height: 150%;
 letter-spacing: 0.03em;
 }
 
+.mob-nav-list-item {
+  transition: transform 250ms;
+}
 .mob-nav-list-item:hover, .mob-nav-list-item:focus {
   color: rgba(0, 176, 104, 1);
 }

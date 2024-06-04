@@ -49,6 +49,7 @@
 .footer-list-item {
   margin-top: 12px;
   margin-bottom: 12px;
+  transition: transform 250ms;
 }
 
 .footer-list-item:hover,

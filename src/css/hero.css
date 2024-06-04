@@ -52,7 +52,9 @@
     align-items: center;
     gap: 24px;
 }
-
+.hero-list-item {
+    transition: transform 250ms;
+}
 .hero-list-item:hover, .hero-list-item:focus {
     color: rgba(0, 176, 104, 1);
   }
@@ -89,6 +91,7 @@ align-items: center;
     width: 165px;
     height: 92px;
     margin-left: auto;
+    transition: transform 250ms;
 }
 
 .button-left-fn:hover {

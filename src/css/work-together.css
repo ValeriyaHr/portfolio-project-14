@@ -54,6 +54,7 @@
         line-height: 1.5em;
         /* 150% */
         letter-spacing: 0.5px;
+        transition: transform 250ms;
 }
 
 .work-list-item:hover, .work-list-item:focus {

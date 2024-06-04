@@ -69,7 +69,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-
+    transition: transform 250ms;
 }
 .projects-icon{
     stroke: #00B068;
@@ -91,6 +91,7 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
+    transition: transform 250ms;
 }
 
 .load-more-button::after {
