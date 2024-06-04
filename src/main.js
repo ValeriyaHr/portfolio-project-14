@@ -9,3 +9,4 @@ import './js/reviews.js';
 import './js/work-together.js';
 import './js/modal.js';
 import './js/footer.js';
+import './js/scrollBtn.js';
