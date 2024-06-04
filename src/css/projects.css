@@ -69,12 +69,12 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    transition: transform 250ms;
+    transition: background-color 250ms;
 }
 .projects-icon{
     stroke: #00B068;
 }
-.projects-btn:hover{
+.projects-btn:hover {
     background-color: #BBBBBB;
 }
 
@@ -91,7 +91,7 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    transition: transform 250ms;
+    transition: color 250ms;
 }
 
 .load-more-button::after {

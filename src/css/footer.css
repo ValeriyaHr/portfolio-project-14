@@ -50,14 +50,21 @@
 .footer-list-item {
   margin-top: 12px;
   margin-bottom: 12px;
-  transition: transform 250ms;
+  
 }
 
 .footer-list-item:hover,
 .footer-list-item:focus {
   color: rgba(0, 176, 104, 1);
 }
+.footer-list-link {
+  transition: color 250ms;
+}
 
+.footer-list-link:hover,
+.footer-list-link:focus {
+  color: rgba(0, 176, 104, 1);
+}
 .copyright {
   display: flex;
   flex-direction: column;
