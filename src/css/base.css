@@ -3,7 +3,8 @@
 body {
     font-family: 'Poppins', 'Impact Regular', 'Montserrat', sans-serif;
     color: #000000;
-    background-color: #F0F0F0;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
   }
   
   .container {
@@ -33,3 +34,132 @@ body {
     }
   }
   
+body.dark-mode {
+background-color:#1E2023;
+color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .mobile-menu {
+  background: rgba(30, 32, 35, 1);
+}
+body.dark-mode .modal {
+  background: rgba(42, 45, 50, 1);
+}
+body.dark-mode .modal-icon-close {
+  stroke: rgba(240, 240, 240, 1);
+}
+body.dark-mode .close-btn-icon {
+  stroke: rgba(240, 240, 240, 1);
+}
+body.dark-mode .menu-open-icon {
+  fill: rgba(240, 240, 240, 1);
+}
+
+body.dark-mode .iamspan {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .hero-btn {
+  color: rgba(240, 240, 240, 1);
+  }
+body.dark-mode .socia-media-container {
+    background-color: rgba(42, 45, 50, 1);
+  }
+body.dark-mode .title {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .ticker-above{
+  background-color: rgba(32, 65, 54, 1);
+}
+body.dark-mode .ticker-bottom {
+  background-color: rgba(42, 45, 50, 1);
+  color: rgba(20, 197, 124, 1);
+}
+body.dark-mode .skills-item-green::before {
+  background-color: #F0F0F0;
+}
+body.dark-mode .projects-btn {
+  background-color: rgba(42, 45, 50, 1);
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .load-more-button{
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .benefits-head {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .benefits-head-text {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .benefits-text {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .faq__title {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .ac-trigger {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .faq-svg {
+  stroke: rgba(240, 240, 240, 1);
+  fill: rgba(240, 240, 240, 1);;
+}
+body.dark-mode .reviews-title {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .reviews-list-item {
+background: rgba(42, 45, 50, 1);
+}
+body.dark-mode .swiper-button-prev,
+body.dark-mode .swiper-button-next {
+  background-color: rgba(42, 45, 50, 1);
+}
+body.dark-mode .swiper-button-prev:hover,
+body.dark-mode .swiper-button-next:hover {
+background-color: rgba(59, 63, 69, 1)
+}
+body.dark-mode .swiper-icon {
+  stroke: rgba(240, 240, 240, 1);
+  fill: transparent;
+}
+body.dark-mode .work-title-span {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .work-sub-tittle {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .work-list-item {
+  color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .work-icon {
+  stroke: rgba(0, 176, 104, 1);
+  fill: rgba(54, 58, 64, 1);
+ }
+ body.dark-mode .work-list-item:hover,
+ body.dark-mode .work-list-item:focus {
+   color: rgba(0, 176, 104, 1);
+ }
+ body.dark-mode .form-btn {
+ background: rgba(20, 197, 124, 1);
+ }
+ body.dark-mode .form-btn:hover {
+   background: rgba(0, 145, 86, 1);
+ }
+ 
+ body.dark-mode .form-input-name {
+   background: #2A2D32;
+   color: rgba(240, 240, 240, 1);
+ }
+ body.dark-mode .input-textarea {
+   background: #2A2D32;
+  color: rgba(240, 240, 240, 1);
+ }
+
+body.light-mode {
+  background-color: #F0F0F0;
+  color:rgba(41, 41, 41, 1);
+}
+body.light-mode .mobile-menu {
+  background-color: #F0F0F0;
+}
+body.light-mode .modal {
+  background-color: #F0F0F0;
+}

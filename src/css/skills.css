@@ -19,7 +19,7 @@
     font-size: 34px;
     text-transform: uppercase;
     background-color: #BCDFD1;
-    z-index: 9999;
+    z-index: 998;
     position: relative;
   }
 
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     background-color: #E4E5E6;
     transform: rotate(2deg);
-    z-index: 9;
+    z-index: 98;
   }
 
   .skills-list {

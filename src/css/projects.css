@@ -33,7 +33,6 @@
 
 .tech-stack {
     font-size: 16px;
-    color: #292929;
     font-family: Poppins;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -41,14 +40,14 @@
 }
 
 .projects-item-title {
-    color: #292929;
+    
     text-align: left;
     font-family: Poppins;
     font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 40px;
     margin-bottom: 16px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .projects-btn {
@@ -64,7 +63,7 @@
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #292929;
     display: flex;
     align-items: center;

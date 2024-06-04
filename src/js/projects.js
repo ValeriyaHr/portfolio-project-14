@@ -1,58 +1,73 @@
+import imgEnergy1x from '../img/energy-1x.jpg';
+import imgEnergy2x from '../img/energy-2x.jpg';
+import imgFruitbox1x from '../img/fruitbox-1x.jpg';
+import imgFruitbox2x from '../img/fruitbox-2x.jpg';
+import imgJewelry1x from '../img/jewelry-1x.jpg';
+import imgJewelry2x from '../img/jewelry-2x.jpg';
+import imgMimino1x from '../img/mimino-1x.jpg';
+import imgMimino2x from '../img/mimino-2x.jpg';
+import imgPower1x from '../img/power-1x.jpg';
+import imgPower2x from '../img/power-2x.jpg';
+import imgStarlight1x from '../img/starlight-1x.jpg';
+import imgStarlight2x from '../img/starlight-2x.jpg';
+import imgVyshyvanka1x from '../img/vyshyvanka-1x.jpg';
+import imgVyshyvanka2x from '../img/vyshyvanka-1x.jpg';
+import iconArrow from '../img/icons.svg';
 document.addEventListener("DOMContentLoaded", () => {
     const projectsList = document.querySelector('.projects-list');
     const loadMoreButton = document.querySelector('.load-more-button');
     const projects = [
         {
-            imgSrc1x: '../img/energy-1x.jpg',
-            imgSrc2x: '../img/energy-2x.jpg',
+            imgSrc1x: imgEnergy1x,
+            imgSrc2x: imgEnergy2x,
             alt: 'energy projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'ENERGY FLOW WEBSERVICE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
         {
-            imgSrc1x: '../img/fruitbox-1x.jpg',
-            imgSrc2x: '../img/fruitbox-2x.jpg',
+            imgSrc1x: imgFruitbox1x,
+            imgSrc2x: imgFruitbox2x,
             alt: 'fruitbox projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'FRUITBOX ONLINE STORE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
         {
-            imgSrc1x: '../img/jewelry-1x.jpg',
-            imgSrc2x: '../img/jewelry-2x.jpg',
+            imgSrc1x: imgJewelry1x,
+            imgSrc2x: imgJewelry2x,
             alt: 'jewelry projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'CHEGO JEWELRY WEBSITE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
             {
-            imgSrc1x: '../img/mimino-1x.jpg',
-            imgSrc2x: '../img/mimino-2x.jpg',
+            imgSrc1x: imgMimino1x,
+            imgSrc2x: imgMimino2x,
             alt: 'mimino projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'MIMINO WEBSITE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
         {
-            imgSrc1x: '../img/power-1x.jpg',
-            imgSrc2x:'../img/power-2x.jpg',
+            imgSrc1x: imgPower1x,
+            imgSrc2x: imgPower2x,
             alt: 'power projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'POWER PULSE WEBSERVICE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
         {
-            imgSrc1x: '../img/starlight-1x.jpg',
-            imgSrc2x: '../img/starlight-2x.jpg',
+            imgSrc1x: imgStarlight1x,
+            imgSrc2x: imgStarlight2x,
             alt: 'starlight projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'STARLIGHT STUDIO LANDING PAGE',
             link: 'https://github.com/Kate-Iva/portfolio-project-14'
         },
 {
-            imgSrc1x: '../img/vyshyvanka-1x.jpg',
-            imgSrc2x: '../img/vyshyvanka-2x.jpg',
+            imgSrc1x: imgVyshyvanka1x,
+            imgSrc2x: imgVyshyvanka2x,
             alt: 'vyshyvanka projects',
             stack: 'React, JavaScript, Node JS, Git',
             title: 'VYSHYVANKA VIBES LANDING PAGE',
@@ -80,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="projects-item-title">${project.title}</div>
                     <a href="${project.link}" class="projects-btn" target="_blank">VISIT
                         <svg class="projects-icon" width="24" height="24">
-                            <use href="../img/icons.svg#icon-arrow-visit"></use>
+                            <use href="${iconArrow}#icon-arrow-visit"></use>
                         </svg>
                     </a>
                 </div>

@@ -34,7 +34,6 @@
     height: 190px;
     overflow-x: hidden;
     overflow-y: auto;
-    color: var(--Black, #292929);
     font-family: Poppins;
     font-weight: 300;
     line-height: 1.5;
@@ -50,7 +49,7 @@
     border-radius: 24px;
 }
 .name-text {
-    color: var(--Black, #292929);
+    
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
