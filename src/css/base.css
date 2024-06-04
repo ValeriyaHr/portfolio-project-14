@@ -41,6 +41,12 @@ color: rgba(240, 240, 240, 1);
 body.dark-mode .mobile-menu {
   background: rgba(30, 32, 35, 1);
 }
+body.dark-mode .modal {
+  background: rgba(42, 45, 50, 1);
+}
+body.dark-mode .modal-icon-close {
+  stroke: rgba(240, 240, 240, 1);
+}
 body.dark-mode .close-btn-icon {
   stroke: rgba(240, 240, 240, 1);
 }
@@ -134,14 +140,14 @@ body.dark-mode .work-icon {
  body.dark-mode .form-btn:hover {
    background: rgba(0, 145, 86, 1);
  }
- body.dark-mode .form-input-name {
-  background: #2A2D32;
- }
+ 
  body.dark-mode .form-input-name {
    background: #2A2D32;
+   color: rgba(240, 240, 240, 1);
  }
  body.dark-mode .input-textarea {
    background: #2A2D32;
+  color: rgba(240, 240, 240, 1);
  }
 
 body.light-mode {
@@ -149,5 +155,8 @@ body.light-mode {
   color:rgba(41, 41, 41, 1);
 }
 body.light-mode .mobile-menu {
+  background-color: #F0F0F0;
+}
+body.light-mode .modal {
   background-color: #F0F0F0;
 }
