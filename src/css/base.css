@@ -73,6 +73,9 @@ body.dark-mode .ticker-bottom {
   background-color: rgba(42, 45, 50, 1);
   color: rgba(20, 197, 124, 1);
 }
+body.dark-mode .skills-item-green::before {
+  background-color: #F0F0F0;
+}
 body.dark-mode .projects-btn {
   background-color: rgba(42, 45, 50, 1);
   color: rgba(240, 240, 240, 1);
