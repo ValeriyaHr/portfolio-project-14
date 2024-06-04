@@ -77,6 +77,8 @@ letter-spacing: 0.03em;
   background: #F0F0F0;
   transform: translateY(-100%);
   transition: transform 250ms;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .mob-menu-wrap {
