@@ -15,7 +15,6 @@
   font-size: 52px;
   line-height: 1.23077;
   letter-spacing: 0.03em;
-  
 }
 .me {
   color: #00b068;
@@ -42,7 +41,6 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-
 }
 
 .bio-first {
@@ -121,13 +119,14 @@
   .bio {
     display: flex;
     gap: 32px;
+    margin-bottom: 60px;
   }
 
   .about-img {
     width: 336px;
     height: 392px;
     margin-top: 368px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .bio-info {
@@ -175,13 +174,13 @@
   .bio {
     gap: 136px;
     margin-left: 208px;
+    margin-bottom: 80px;
   }
 
   .about-img {
     width: 384px;
     height: 448px;
     margin-top: 272px;
-    margin-bottom: 80px;
   }
 
   .bio-info {
