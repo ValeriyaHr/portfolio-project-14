@@ -2,6 +2,7 @@ const hamburgerBtn = document.getElementById('menu-open_btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const closedMobileMenuBtn = document.getElementById('close-mobile-menu');
 const headerMenu = document.querySelectorAll('.mob-nav-list li');
+const modal = document.querySelector('.modal')
 
 hamburgerBtn.addEventListener('click', function() {
     mobileMenu.style.transform = 'translateY(0)';
@@ -67,4 +68,13 @@ const applyThemeToMobileMenu = () => {
     }
 };
 applyThemeToMobileMenu();
+const applyThemeToModal = () => {
+    if (body.classList.contains('dark-mode')) {
+        modal.classList.add('dark-mode');
+        modal.classList.remove('light-mode'); 
+    } else {
+        modal.classList.add('light-mode');
+        modal.classList.remove('dark-mode');
+}
+}
 
