@@ -1,5 +1,5 @@
 .herotitle {
-    font-family: 'Impact Regular';
+    font-family: 'Impact';
     font-size: 124px;
     font-weight: 400;
     line-height: 148px;
@@ -55,36 +55,45 @@
 .hero-list-item:hover, .hero-list-item:focus {
     color: rgba(0, 176, 104, 1);
   }
-.button-left-fn {
-    text-wrap: nowrap;
-
-    margin-right: 100px;
-
-}
-
-.hero-btn {
-
-    height: 96px;
-    width: 261px;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: black;
-    background-color: #00B06833;
-    ;
-    align-items: center;
-    border-radius: 16px;
-    cursor: pointer;
+  .btn-block {
     display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 320px;
+}
+.right-part {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+}
+.hero-btn-link {
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+z-index: 5;
+display: flex;
+align-items: center;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.button-left-fn {
+    position: relative;
+    background-color: rgba(0, 176, 104, 0.2);
+    border-radius: 16px;
+    width: 165px;
+    height: 92px;
+    left: 50%;
 }
 
-.hero-btn:hover {
+.button-left-fn:hover {
     background-color: #00B06899;
-    ;
 }
+
 
 .title-image-container {
     display: flex;
@@ -186,3 +195,4 @@
         margin-bottom: 50px;
     }
 }
+
