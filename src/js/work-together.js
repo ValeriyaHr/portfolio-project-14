@@ -7,8 +7,8 @@ const sendBtn = document.querySelector('.form-btn');
 const closeModalBtn = document.querySelector('.modal-close-btn');
 const emailInp = document.querySelector('.form-input-name');
 const msgInp = document.querySelector('.input-textarea');
-const modalEl = document.querySelector('.backdrop')
-
+const modalEl = document.querySelector('.backdrop');
+const InvalidEl = document.querySelector('.work-invalid-email')
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 const userData = {
     "email": "",
@@ -18,6 +18,8 @@ const userData = {
 
 const userMail = (event) => {
     userData.email = event.target.value;
+    InvalidEl.classList.add('d-none')
+    emailInp.classList.remove('form-input-name-red')
 }
 emailInp.addEventListener('input', userMail);
 
@@ -30,10 +32,17 @@ msgInp.addEventListener('input', userMsg);
 
 const sendData = async () => axios.post(BASE_URL, userData);
 
-   
     
 const sendForm = async (event) => {
     event.preventDefault();
+    console.log(emailInp.checkValidity());
+
+    if (!emailInp.checkValidity()) {
+        InvalidEl.classList.remove('d-none')
+        emailInp.classList.add('form-input-name-red')
+        return
+    }
+
     if (userData.comment === '' || userData.email === '') {
         iziToast.error({
             message: 'All fields must be completed!',

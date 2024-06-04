@@ -37,22 +37,27 @@
         </ul>
       </div>
       <!--form-->
-      <form class="form" action="#">
+      <form novalidate class="form" action="#">
         <div class="form-block">
           <label class="form-label" for="user-email">Email</label>
           <input
+            required
             class="form-input-name"
-            type="email"
+            type="text"
             id="user-email"
             name="user-email"
             placeholder="Your email*"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
+          <span class="work-invalid-email d-none"
+            >Invalid email, try again</span
+          >
         </div>
 
         <div class="form-label-textarea">
           <label class="form-label" for="user-comment">Comment</label>
           <textarea
+            required
             class="input-textarea"
             id="user-comment"
             name="user-comment"
