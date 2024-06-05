@@ -18,6 +18,8 @@ headerMenu.forEach(item => {
     });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (event.target.matches('a[href^="#"]')) {
