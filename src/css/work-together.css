@@ -44,8 +44,11 @@
 .work-list-link {
     display: flex;
     gap: 16px;
+    transition: color 250ms;
 }
-
+.work-list-link:hover, .work-list-link:focus {
+    color: rgba(0, 176, 104, 1);
+}
 .work-list-item {
     display: flex;
     gap: 16px;
@@ -58,12 +61,10 @@
         line-height: 1.5em;
         /* 150% */
         letter-spacing: 0.5px;
-        transition: transform 250ms;
+        
 }
 
-.work-list-item:hover, .work-list-item:focus {
-    color: rgba(0, 176, 104, 1);
-}
+
 
 .work-icon {
     stroke: rgba(0, 176, 104, 1);
@@ -117,7 +118,7 @@
 
 .form-btn {
     border-radius: 8px;
-    background: var(--Accet-green, #00B068);
+    background-color: var(--Accet-green, #00B068);
     color: var(--White, #F0F0F0);
         /* Desktop-Tablet/body 2 bold */
         font-family: Poppins;
@@ -129,10 +130,10 @@
         border: none;
         width: 100%;
         height: 48px;
-        transition: transform 250ms;
+        transition: background-color 250ms;
 }
 .form-btn:hover, .form-btn:focus {
-    background: #009156;;
+    background-color: #009156;;
 }
 .work-invalid-email {
     opacity: 1;

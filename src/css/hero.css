@@ -34,8 +34,11 @@
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    transition: color 250ms;
 }
-
+.hero-list-link:hover, .hero-list-link:focus {
+    color: rgba(0, 176, 104, 1);
+  }
 .socia-media-container {
     background-color: #E4E5E6;
     padding: 32px;
@@ -53,11 +56,8 @@
     gap: 24px;
 }
 .hero-list-item {
-    transition: transform 250ms;
 }
-.hero-list-item:hover, .hero-list-item:focus {
-    color: rgba(0, 176, 104, 1);
-  }
+
   .btn-block {
     display: flex;
     align-items: center;
@@ -79,7 +79,9 @@ text-transform: uppercase;
 z-index: 5;
 display: flex;
 align-items: center;
+transition: color 250ms;
 }
+
 .icon {
     display: flex;
     align-items: center;
@@ -94,7 +96,7 @@ align-items: center;
     transition: transform 250ms;
 }
 
-.button-left-fn:hover {
+.hero-btn-link:hover + .button-left-fn {
     background-color: #00B06899;
 }
 
