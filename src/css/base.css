@@ -80,8 +80,14 @@ body.dark-mode .projects-btn {
   background-color: rgba(42, 45, 50, 1);
   color: rgba(240, 240, 240, 1);
 }
+body.dark-mode .projects-btn:hover {
+  background-color: rgba(59, 63, 69, 1);
+}
 body.dark-mode .load-more-button{
   color: rgba(240, 240, 240, 1);
+}
+body.dark-mode .load-more-button:hover {
+  color: #00B068;
 }
 body.dark-mode .benefits-head {
   color: rgba(240, 240, 240, 1);
