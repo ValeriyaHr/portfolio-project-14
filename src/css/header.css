@@ -79,8 +79,9 @@ transition: color 250ms;
   transform: translateY(-100%);
   transition: transform 250ms;
   z-index: 999;
-  overflow: hidden;
+  
 }
+
 
 .mob-menu-wrap {
   position: absolute;
@@ -142,12 +143,12 @@ align-items: center;
 .menu-open_btn {
   display: none;
 }
-.mob-menu {
+.mobile-menu {
   display: none;
 }
 }
 @media screen and (min-width: 1280px) {
-    .mob-menu {
+    .mobile-menu {
       display: none;
     }
 }
@@ -179,7 +180,7 @@ margin-left: 5px;
   border-radius: 50px;
   border: 1px solid transparent;
   margin-right: 10px;
-  transition-duration: 300ms;
+  transition-duration: 250ms;
 
 }
 
@@ -192,7 +193,7 @@ margin-left: 5px;
   height: 18px;
   border-radius: 50%;
   background-color: rgba(0, 176, 104, 1);
-  transition-duration: 300ms;
+  transition-duration: 250ms;
 }
 
 .check-input:checked+.check-text::after {
