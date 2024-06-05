@@ -143,16 +143,7 @@ align-items: center;
 .menu-open_btn {
   display: none;
 }
-.mobile-menu {
-  display: none;
 }
-}
-@media screen and (min-width: 1280px) {
-    .mobile-menu {
-      display: none;
-    }
-}
-
 .header-nav-toggle {
   display: flex;
   gap: 10px;
