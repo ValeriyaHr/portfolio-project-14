@@ -23,6 +23,18 @@ const userMail = (event) => {
 }
 emailInp.addEventListener('input', userMail);
 
+
+const blurEmailInp = () => {
+    if (userData.email === '') {
+        return
+    }
+    if (!emailInp.checkValidity()) {
+        InvalidEl.classList.remove('d-none')
+        emailInp.classList.add('form-input-name-red')
+    }
+}
+emailInp.addEventListener('blur', blurEmailInp)
+
 const userMsg = (event) => {
     userData.comment = event.target.value;
 };
@@ -35,8 +47,6 @@ const sendData = async () => axios.post(BASE_URL, userData);
     
 const sendForm = async (event) => {
     event.preventDefault();
-    console.log(emailInp.checkValidity());
-
     if (!emailInp.checkValidity()) {
         InvalidEl.classList.remove('d-none')
         emailInp.classList.add('form-input-name-red')
