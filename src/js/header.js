@@ -6,15 +6,18 @@ const modal = document.querySelector('.modal')
 
 hamburgerBtn.addEventListener('click', function() {
     mobileMenu.style.transform = 'translateY(0)';
+    body.classList.toggle('noScroll');
 });
 
 closedMobileMenuBtn.addEventListener('click', function() {
     mobileMenu.style.transform = 'translateY(-100%)';
+    body.classList.toggle('noScroll');
 });
 
 headerMenu.forEach(item => {
     item.addEventListener('click', function() {
         mobileMenu.style.transform = 'translateY(-100%)';
+        body.classList.toggle('noScroll');
     });
 });
 
@@ -80,3 +83,9 @@ const applyThemeToModal = () => {
 }
 }
 
+window.addEventListener('resize', () => {
+    if (window.outerWidth >= 768) {
+        mobileMenu.style.transform = 'translateY(-100%)';
+        body.classList.remove('noScroll');
+    }
+})

@@ -1,6 +1,7 @@
 .skills {
     margin-top: 40px;
     margin-bottom: 40px;
+    overflow-x: hidden;
 }
 
 .skills-container {
