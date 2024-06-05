@@ -301,6 +301,7 @@ align-items: center;
 
         .work-list {
             flex-direction: column;
+            margin-bottom: 0;
         }
 
         .work-laptop-position {

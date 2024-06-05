@@ -121,6 +121,10 @@
     }
 }
 @media screen and (min-width: 1280px) {
+    .reviews {
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
     .reviews-container {
         max-width: 1280px;
     }
