@@ -143,12 +143,12 @@ align-items: center;
 .menu-open_btn {
   display: none;
 }
-.mob-menu {
+.mobile-menu {
   display: none;
 }
 }
 @media screen and (min-width: 1280px) {
-    .mob-menu {
+    .mobile-menu {
       display: none;
     }
 }
