@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://valeriyahr.github.io/portfolio-project-14/assets/favicon-576b8c14.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    
+    <!-- <link id="theme-stylesheet" rel="stylesheet" /> -->
+    <script type="module" crossorigin src="https://valeriyahr.github.io/portfolio-project-14/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="https://valeriyahr.github.io/portfolio-project-14/assets/vendor-0177c146.js">
+    <link rel="stylesheet" href="https://valeriyahr.github.io/portfolio-project-14/assets/vendor-ed6a6904.css">
+    <link rel="stylesheet" href="https://valeriyahr.github.io/portfolio-project-14/assets/index-ef7bc551.css">
+  </head>
+  <body class="light-mode">
+    <header>
+      <div class="header">
+  <div class="container header-container">
+    <a class="header-logo-link" href="">
+      <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
+    </a>
+    <button
+      class="menu-open_btn"
+      type="button"
+      id="menu-open_btn"
+      title="Button for open mobile menu"
+    >
+      <svg width="32" height="32" class="menu-open-icon">
+        <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-open"></use>
+      </svg>
+    </button>
+
+    <div class="header-nav-toggle">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <a href="#about_me" class="header-nav-list-link"> About me </a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#projects" class="header-nav-list-link"> Projects </a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#contacts" class="header-nav-list-link"> Contacts </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-toggle">
+        <input type="checkbox" class="check-input" id="toggleCheckbox" />
+        <label for="toggleCheckbox" class="check-text"></label>
+      </div>
+    </div>
+  </div>
+
+  <!--mobile_menu-->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mob-menu-wrap container">
+      <a class="header-logo-link" href="/">
+        <p>Lloyd<span class="header-logo-span">Jefferson.</span></p>
+      </a>
+      <button
+        type="button"
+        class="close-mobile-menu"
+        id="close-mobile-menu"
+        name="Close mobile menu"
+      >
+        <svg class="close-btn-icon" width="32" height="32">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons_header-a81dde09.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mob-nav">
+      <ul class="mob-nav-list">
+        <li class="mob-nav-list-item">
+          <a href="#about_me" class="mob-nav-list-link"> About me </a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#projects" class="mob-nav-list-link"> Projects </a>
+        </li>
+        <li class="mob-nav-list-item">
+          <a href="#contacts" class="mob-nav-list-link"> Contacts </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+    </header>
+    <main>
+      <section class="hero">
+
+    <div class="container hero_container">
+        <a href="#top" class="scroll__btn" id="scrollBtn">
+            <svg class="scroll__svg" width="32" height="32">
+                <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-scroll-up"></use>
+            </svg>
+        </a>
+        <div class="title-image-container">
+            <h1 class="hero-title"><span class="iamspan">Hello, I am </span>fullstack developer</h1>
+            <img src="data:image/jpeg;base64,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" alt="LloydJefferson."  class="image">
+        </div>
+        <div class="button-text-container">
+            <div class="btn-block">
+                <div class="right-part">
+                  <a href="#contacts" class="hero-btn-link">
+                    <svg width="28" height="28" class="icon">
+                        <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow_right_btn"></use>
+                    </svg>
+                    Order the project    
+                  </a>
+                </div>
+                <div class="button-left-fn"></div>
+            </div>
+
+            <p class="hero-text">I work with people all over the world to create <span
+                    class="iamspantwo">impressive</span> and <span class="iamspantwo">functional websites</span> that
+                reflect each client’s unique personality. </p>
+        </div>
+
+    </div>
+    <div class="socia-media-container">
+        <ul class="hero-list">
+            <li class="hero-list-item">
+                <a class="hero-list-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-list-link" href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-list-link" href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank">Linkedin</a>
+            </li>
+            <li class="hero-list-item">
+                <a class="hero-list-link" href="https://github.com/Kate-Iva/portfolio-project-14"
+                    target="_blank">GitHub</a>
+            </li>
+        </ul>
+
+    </div>
+</section>
+      <section class="about-me section" id="about_me">
+  <div class="about-me-container container">
+    <h2 class="about-title">ABOUT <span class="me">ME</span></h2>
+    <div class="bio">
+      <img
+        srcset="https://valeriyahr.github.io/portfolio-project-14/assets/img-4debff0d.jpg 1x, https://valeriyahr.github.io/portfolio-project-14/assets/img2x-bd1f5c57.jpg 2x"
+        class="about-img"
+        src="https://valeriyahr.github.io/portfolio-project-14/assets/img-4debff0d.jpg"
+        alt="Lloyd Jefferson"
+      />
+      <div class="bio-info">
+        <h3 class="bio-title title">BIO</h3>
+        <p class="bio-first text">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="bio-second text">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="about-skills-container">
+      <div class="education-box">
+        <h3 class="education title">EDUCATION</h3>
+        <ul class="education-list list text">
+          <li class="education-item item">
+            <span class="marker"></span>
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="education-item item">
+            <span class="marker"></span>
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="education-item item">
+            <span class="marker"></span>
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+
+      <div class="role-box">
+        <h3 class="role title">ROLE</h3>
+        <ul class="role-list list text">
+          <li class="role-item item">Frontend development</li>
+          <li class="role-item item">HeadlessCMS, Wordpress</li>
+          <li class="role-item item">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="skills">
+    <div class="skills-container">
+        <h2 class="skills-tittle visually-hidden">Tech skills</h2>
+         <div class="ticker-above">
+            <div class="skills-list">
+                <span class="skills-item">HTML/CSS</span>
+                <span class="skills-item">JavaScript</span>
+                <span class="skills-item">React</span>
+                <span class="skills-item">Node. js</span>
+                <span class="skills-item">React Native</span>
+                <span class="skills-item">Typescript</span>
+
+                <span class="skills-item">HTML/CSS</span>
+                <span class="skills-item">JavaScript</span>
+                <span class="skills-item">React</span>
+                <span class="skills-item">Node. js</span>
+                <span class="skills-item">React Native</span>
+                <span class="skills-item">Typescript</span>
+
+                <span class="skills-item">HTML/CSS</span>
+                <span class="skills-item">JavaScript</span>
+                <span class="skills-item">React</span>
+                <span class="skills-item">Node. js</span>
+                <span class="skills-item">React Native</span>
+                <span class="skills-item">Typescript</span>
+
+            </div>
+                
+         </div>
+
+
+        <div class="ticker-bottom">            
+            <div class="skills-list">
+                <span class="skills-item-green">JavaScript</span>
+                <span class="skills-item-green">React</span>
+                <span class="skills-item-green">Node. js</span>
+                <span class="skills-item-green">React Native</span>
+                <span class="skills-item-green">Typescript</span>
+                <span class="skills-item-green">HTML/CSS</span>
+
+                <span class="skills-item-green">JavaScript</span>
+                <span class="skills-item-green">React</span>
+                <span class="skills-item-green">Node. js</span>
+                <span class="skills-item-green">React Native</span>
+                <span class="skills-item-green">Typescript</span>
+                <span class="skills-item-green">HTML/CSS</span>
+
+                <span class="skills-item">HTML/CSS</span>
+                <span class="skills-item">JavaScript</span>
+                <span class="skills-item">React</span>
+                <span class="skills-item">Node. js</span>
+                <span class="skills-item">React Native</span>
+                <span class="skills-item">Typescript</span>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+      <section class="projects" id="projects">
+    <div class="container projects-container">
+    <h2 class="projects-tittle">MY <span>PROJECTS</span></h2>
+<ul class="projects-list">
+<li class="projects-list-items">
+<picture>
+    <source srcset="https://valeriyahr.github.io/portfolio-project-14/assets/wallet-1x-5810cc52.jpg 1x, https://valeriyahr.github.io/portfolio-project-14/assets/wallet-1x-5810cc52.jpg 2x" />
+    <img src="https://valeriyahr.github.io/portfolio-project-14/assets/wallet-1x-5810cc52.jpg" alt="wallet projects"  class="projects-item-img">
+</picture>
+<div class="tech-stack">React, JavaScript, Node JS, Git</div>
+<div class="projects-item-conteiner">
+<div class="projects-item-title">WALLET WEBSERVICE</div>
+<a href="https://github.com/Kate-Iva/portfolio-project-14" class="projects-btn" target="_blank">VISIT
+    <svg class="projects-icon" width="24" height="24">
+        <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow-visit"></use>
+    </svg>
+</a>
+</div>
+</li>
+<li class="projects-list-items">
+    <picture>
+        <source srcset="https://valeriyahr.github.io/portfolio-project-14/assets/harvest-1x-6eaa8875.jpg 1x, https://valeriyahr.github.io/portfolio-project-14/assets/harvest-2x-bec27449.jpg 2x" />
+        <img src="https://valeriyahr.github.io/portfolio-project-14/assets/harvest-1x-6eaa8875.jpg" alt="harvest projects" class="projects-item-img">
+    </picture>
+    <div class="tech-stack">React, JavaScript, Node JS, Git</div>
+<div class="projects-item-conteiner">
+    <div class="projects-item-title">GREEN HARVEST ONLINE STORE</div>
+    <a href="https://github.com/Kate-Iva/portfolio-project-14" class="projects-btn" target="_blank">VISIT
+        <svg class="projects-icon" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow-visit"></use>
+        </svg>
+    </a>
+</div>
+</li>
+<li class="projects-list-items">
+<picture>
+    <source srcset="https://valeriyahr.github.io/portfolio-project-14/assets/english-1x-e0576bd7.jpg 1x, https://valeriyahr.github.io/portfolio-project-14/assets/english-2x-fb79b545.jpg 2x" />
+    <img src="https://valeriyahr.github.io/portfolio-project-14/assets/english-1x-e0576bd7.jpg" alt="english projects" class="projects-item-img">
+</picture>
+<div class="tech-stack">React, JavaScript, Node JS, Git</div>
+<div class="projects-item-conteiner">
+    <div class="projects-item-title">ENGLISH EXCELLENCE WEBSERVICE</div>
+    <a href="https://github.com/Kate-Iva/portfolio-project-14" class="projects-btn" target="_blank">VISIT
+        <svg class="projects-icon" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow-visit"></use>
+        </svg>
+    </a>
+</div>
+</li>
+</ul>
+<button class="load-more-button">LOAD MORE</button>
+</div>
+</section>
+      <section class="benefits">
+  <h2 class="benefits-head">
+    <span class="benefits-head-green">BENEFITS</span> OF WORKING WITH ME
+  </h2>
+  <ul class="benefits-menu">
+    <li class="benefits-list">
+      <div class="benefits-wrapper">
+        <svg class="benefits-wrapper-svg" width="24" height="24">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/benefits-a0d7f774.svg#icon-user-01"></use>
+        </svg>
+      </div>
+      <h3 class="benefits-head-text">Expertise</h3>
+      <p class="benefits-text">
+        With extensive experience in development, I have a deep understanding of
+        programming and website development.
+      </p>
+    </li>
+    <li class="benefits-list">
+      <div class="benefits-wrapper">
+        <svg class="benefits-wrapper-svg" width="24" height="24">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/benefits-a0d7f774.svg#icon-message-chat-circle"></use>
+        </svg>
+      </div>
+      <h3 class="benefits-head-text">Communication</h3>
+      <p class="benefits-text">
+        Understanding your needs and wants is my priority and I am always
+        available for discussions and open to corrections.
+      </p>
+    </li>
+    <li class="benefits-list">
+      <div class="benefits-wrapper">
+        <svg class="benefits-wrapper-svg" width="24" height="24">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/benefits-a0d7f774.svg#icon-brush-01"></use>
+        </svg>
+      </div>
+      <h3 class="benefits-head-text">Art</h3>
+      <p class="benefits-text">
+        Thanks to my creative nature, I am ready to accept challenges and help
+        you bring your ideas to life.
+      </p>
+    </li>
+    <li class="benefits-list">
+      <div class="benefits-wrapper">
+        <svg class="benefits-wrapper-svg" width="24" height="24">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/benefits-a0d7f774.svg#icon-hourglass-02"></use>
+        </svg>
+      </div>
+      <h3 class="benefits-head-text">Urgent execution</h3>
+      <p class="benefits-text">
+        I understand how important time is to you. Ready to work quickly and
+        efficiently, without reducing the quality of work.
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section class="faq light">
+  <div class="container">
+    <h2 class="faq__title light">Frequently asked <span class="title__accent">question</span></h2>
+    <ul class="accordion-container">
+      <li class="ac is-active" id="1">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">What programming languages ​​are most often used in your
+            project?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">In the field of web development, there are various technologies and programming
+            languages. Typically, this includes a combination of frontend (client side) and backend (server
+            side) languages.</p>
+        </div>
+      </li>
+      <li class="ac" id="2">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">What are the deadlines for the project?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">The terms of project implementation depend to a large extent on a number of
+            factors, such as the scope of the project, its complexity, and the availability of resources.
+            Determining exact deadlines is a difficult task, and it usually occurs during the planning phase
+            of the project.</p>
+        </div>
+      </li>
+      <li class="ac" id="3">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">What payment methods do you accept?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">Payment through credit and debit cards such as Visa, MasterCard, specialized
+            electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as
+            Bitcoin, Ethereum and others.</p>
+        </div>
+      </li>
+      <li class="ac" id="4">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">How can I contact you?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">In the field of web development, there are various technologies and programming
+            languages. Typically, this includes a combination of frontend (client side) and backend (server
+            side) languages.</p>
+        </div>
+      </li>
+      <li class="ac" id="5">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">Do you provide advice or support?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">The terms of project implementation depend to a large extent on a number of
+            factors, such as the scope of the project, its complexity, and the availability of resources.
+            Determining exact deadlines is a difficult task, and it usually occurs during the planning phase
+            of the project.</p>
+        </div>
+      </li>
+      <li class="ac" id="6">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">What does the process of developing a software product look
+            like from idea to implementation?</button>
+        </h3>
+        <div class="svg-wrapper">
+          <svg class="faq-svg" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-ctrl"></use>
+          </svg>
+        </div>
+        <div class="ac-panel">
+          <p class="ac-text">Payment through credit and debit cards such as Visa, MasterCard, specialized
+            electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as
+            Bitcoin, Ethereum and others.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="reviews">
+  <div class="container reviews-container">
+    <h2 class="reviews-title">reviews</h2>
+    <div class="swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <div class="swiper-navigation">
+        <button type="button" class="swiper-button-prev">
+          <svg class="swiper-icon" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+          <svg class="swiper-icon" width="24" height="24">
+            <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="work_togather" id="contacts">
+  <div class="container work-container">
+    <h2 class="work-title">
+      <span class="work-title-span">let's</span> work<br />
+      together
+    </h2>
+    <div class="work-laptop-position">
+      <div>
+        <h3 class="work-sub-tittle">
+          Contact me to transform your ideas into exceptional solutions.
+        </h3>
+        <ul class="work-list">
+          <li class="work-list-item">
+            <a class="work-list-link" href="tel:+380904567890">
+              <svg width="24" height="24" class="work-icon">
+                <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-telephone"></use>
+              </svg>
+              <span>+38 090 456 78 90</span>
+            </a>
+          </li>
+
+          <li class="work-list-item">
+            <a class="work-list-link" href="mailto:lloydjefferson@gmail.com">
+              <svg width="24" height="24" class="work-icon">
+                <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-email"></use>
+              </svg>
+              <span>lloydjefferson@gmail.com</span>
+            </a>
+          </li>
+
+          <li class="work-list-item item-location">
+            <a class="work-list-link" href="mailto:lloydjefferson@gmail.com">
+            <svg width="24" height="24" class="work-icon">
+              <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-location"></use>
+            </svg>
+            <span>USA, New York</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--form-->
+      <form novalidate class="form" action="#">
+        <div class="form-block">
+          <label class="form-label" for="user-email">Email</label>
+          <input
+            required
+            class="form-input-name"
+            type="text"
+            id="user-email"
+            name="user-email"
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <span class="work-invalid-email d-none"
+            >Invalid email, try again</span
+          >
+        </div>
+
+        <div class="form-label-textarea">
+          <label class="form-label" for="user-comment">Comment</label>
+          <textarea
+            required
+            class="input-textarea"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Message"
+          ></textarea>
+        </div>
+
+        <button class="form-btn" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+  <!--modal-->
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-icon-close" width="24" height="24">
+          <use href="https://valeriyahr.github.io/portfolio-project-14/assets/icons-f8ade711.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-box-text">
+        <h3 class="modal-text-green">
+          Thank you for your interest in cooperation!
+        </h3>
+        <p class="modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+    <div class="footer-content">
+        <a class="footer-logo-link" href="">
+        <p> Lloyd<span class="footer-logo-span">Jefferson.</span></p>
+        </a>
+        <ul class="footer-list footer-font">
+            <li class="footer-list-item">
+                 <a class="footer-list-link" href="https://www.instagram.com/goitclub/" target="_blank">Instagram</a>
+            </li>
+            <li class="footer-list-item">
+                 <a class="footer-list-link" href="https://www.facebook.com/goITclub/" target="_blank">Facebook</a>
+            </li>
+            <li class="footer-list-item">
+                <a class="footer-list-link" href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank">Linkedin</a>
+            </li>
+            <li class="footer-list-item">
+                <a class="footer-list-link" href="https://github.com/Kate-Iva/portfolio-project-14" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </div>
+    <p class="copyright footer-font">
+        <span >© Copyright 2024.</span>
+        <span class="space-copyright">Made by LloydJefferson</span>
+    </p>
+</div>
+    </footer>
+    
+  </body>
+</html>
