@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/portfolio-project-14/",
+    "build": "vite build --base=https://valeriyahr.github.io/portfolio-project-14/",
     "preview": "vite preview"
   },
   "devDependencies": {
